@@ -14,10 +14,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
-})
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/FIT5032_EFolio/NoMash-Library'
+  },
+  base: process.env.NODE_ENV === 'production'
+    ? '/FIT5032-W12/'
     : '/'
-}
+})
